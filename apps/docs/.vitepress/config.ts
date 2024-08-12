@@ -6,7 +6,6 @@ import apiLinks from '../.typedoc/api-links.json';
 export default defineConfig({
   title: 'Fuels-ts',
   description: 'Fuel Typescript SDK',
-  base: '/fuels-ts/',
   srcDir: 'src',
   outDir: 'dist',
   lang: 'en-US',
@@ -306,6 +305,10 @@ export default defineConfig({
               {
                 text: 'Methods',
                 link: '/guide/predicates/methods',
+              },
+              {
+                text: 'Custom Transactions',
+                link: '/guide/predicates/custom-transactions',
               },
             ],
           },

@@ -42,16 +42,16 @@ describe(__filename, () => {
       wallet
     );
 
-    let { waitForResult } = await factory1.deployContract();
+    let { waitForResult } = await factory1.deploy();
     ({ contract: echoContract } = await waitForResult());
 
-    ({ waitForResult } = await factory2.deployContract({
+    ({ waitForResult } = await factory2.deploy({
       storageSlots: counterArtifacts.storageSlots,
     }));
 
     ({ contract: counterContract } = await waitForResult());
 
-    ({ waitForResult } = await factory3.deployContract());
+    ({ waitForResult } = await factory3.deploy());
     ({ contract: contextContract } = await waitForResult());
   });
 
@@ -61,8 +61,8 @@ describe(__filename, () => {
     const { waitForResult } = await counterContract
       .multiCall([
         counterContract.functions.get_count(),
-        counterContract.functions.increment_count(2),
-        counterContract.functions.increment_count(4),
+        counterContract.functions.increment_counter(2),
+        counterContract.functions.increment_counter(4),
       ])
       .call();
 
@@ -83,7 +83,7 @@ describe(__filename, () => {
     const chain = echoContract.multiCall([
       echoContract.functions.echo_u8(17),
       counterContract.functions.get_count(),
-      counterContract.functions.increment_count(5),
+      counterContract.functions.increment_counter(5),
     ]);
 
     const { waitForResult } = await chain.call();

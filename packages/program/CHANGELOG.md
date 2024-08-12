@@ -1,5 +1,45 @@
 # Change Log
 
+## 0.93.0
+
+### Minor Changes
+
+- ad0a081: chore!: remove `awaitExecution` functionality
+- d4c4e55: chore!: refactored the `getTransactionCost` method
+
+### Patch Changes
+
+- 6b3df9d: build(deps): bump ramda and @types/ramda
+- Updated dependencies [6b3df9d]
+- Updated dependencies [ad0a081]
+- Updated dependencies [d4c4e55]
+- Updated dependencies [c99f56b]
+- Updated dependencies [f3453b9]
+- Updated dependencies [16ee1bf]
+  - @fuel-ts/account@0.93.0
+  - @fuel-ts/interfaces@0.93.0
+  - @fuel-ts/transactions@0.93.0
+  - @fuel-ts/errors@0.93.0
+  - @fuel-ts/utils@0.93.0
+  - @fuel-ts/abi-coder@0.93.0
+  - @fuel-ts/address@0.93.0
+  - @fuel-ts/math@0.93.0
+
+## 0.92.1
+
+### Patch Changes
+
+- c62ae85: build(deps): bump @fuels/vm-asm from 0.54.0 to 0.55.0
+- Updated dependencies [c62ae85]
+  - @fuel-ts/account@0.92.1
+  - @fuel-ts/abi-coder@0.92.1
+  - @fuel-ts/address@0.92.1
+  - @fuel-ts/errors@0.92.1
+  - @fuel-ts/interfaces@0.92.1
+  - @fuel-ts/math@0.92.1
+  - @fuel-ts/transactions@0.92.1
+  - @fuel-ts/utils@0.92.1
+
 ## 0.92.0
 
 ### Minor Changes
